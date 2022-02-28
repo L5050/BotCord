@@ -16,13 +16,13 @@ limitations under the License. -->
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>LiveBot</title>
+        <title>BotCord</title>
         <!-- Javascript -->
         <script type="text/javascript">
             if (typeof process === 'undefined') {
-                alert("This isn't going to work. Please follow the instructions on LiveBot's github page in the readme.md file. This app is based on NodeJS and it's modules and is not made to work in a browser.")
+                alert("This isn't going to work. Please follow the instructions on BotCord's github page in the readme.md file. This app is based on NodeJS and it's modules and is not made to work in a browser.")
             }
-                
+
             // "Fixes" a deprecation in the electron source code
             // https://developer.chrome.com/blog/enabling-shared-array-buffer/
             if (!crossOriginIsolated) SharedArrayBuffer = ArrayBuffer;
@@ -77,7 +77,7 @@ limitations under the License. -->
     <body onload="create()">
         <!-- Titlebar -->
         <div id="titlebar">
-            <span>LiveBot</span>
+            <span>Botcord</span>
             <div class="titleButton" id="exit">
                 <img src="resources/icons/closeWindow.svg" alt="close" width="10px">
             </div>
@@ -96,26 +96,26 @@ limitations under the License. -->
         <div id="splashScreen">
             <div id="stuckLoadingCont">
                 <h2>Stuck Loading?</h2>
-                
+
                 <div id="faqMenu">
-                    <p>There are a few common issues that can occur in the loading screen. If you're having an issue, follow these steps to resolve any issues. If you're still having problems after that, join the <a target="_blank" href="https://discord.gg/NG4rgqSgzx">support server</a>.</p>
+                    <p>There are a few common issues that can occur in the loading screen. If you're having an issue, follow these steps to resolve any issues.</p>
                     <hr>
 
-                    <h3>Is your firewall blocking LiveBot?</h3>
-                    <p>Try disabling your Windows Defender firewall temporarily, then restarting LiveBot, to see if that fixes your issue. You can also then choose to enable LiveBot through your firewall if that solves the problem.</p>
+                    <h3>Is your firewall blocking BotCord?</h3>
+                    <p>Try disabling your Windows Defender firewall temporarily, then restarting BotCord, to see if that fixes your issue. You can also then choose to enable BotCord through your firewall if that solves the problem.</p>
                     <hr>
 
                     <h3>Is the bot in any servers?</h3>
-                    <p>Your bot will need to be in at least 1 server for LiveBot to get past the loading screen. Try making a temporary testing server, and invite the bot to it, then restart LiveBot.</p>
+                    <p>Your bot will need to be in at least 1 server for Botcord to get past the loading screen. Try making a temporary testing server, and invite the bot to it, then restart BotCord.</p>
                     <hr>
 
                     <h3>Are the gateway intents enabled?</h3>
-                    <p>LiveBot requires both gateway intents to be enabled.</p>
+                    <p>BotCord requires both gateway intents to be enabled.</p>
                     <img src="https://images.soue.ca/IGB0f3qF0y.png">
                     <hr>
-                    
+
                     <h3>Clearing the cache.</h3>
-                    <p>If the loading screen is stuck saying "Logging into the bot", then you may need to clear the local storage cache. To do that easily, click the button below, then restart livebot.</p>
+                    <p>If the loading screen is stuck saying "Logging into the bot", then you may need to clear the local storage cache. To do that easily, click the button below, then restart BotCord.</p>
                     <div>
                         <button id="clearCache">Clear Local Storage</button>
                     </div>
@@ -130,7 +130,7 @@ limitations under the License. -->
                 <div class="loadingCircle" id="c5"></div>
             </div>
 
-            <h1>LiveBot</h1>
+            <h1>BotCord</h1>
 
             <div id="loadingBar">
                 <div id="loadingIncomplete"></div>
@@ -201,7 +201,7 @@ limitations under the License. -->
             </div>
 
             <div id="serverName">
-                <h5 id="guildName">LiveBot</h5>
+                <h5 id="guildName">BotCord</h5>
                 <img src="resources/images/default.png" id="guildImg" />
                 <p id="members-text" class="members">Members:</p>
                 <p id="members-count" class="members">Infinite</p>
