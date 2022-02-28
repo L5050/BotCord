@@ -1,5 +1,5 @@
 {
-    "name": "livebot",
+    "name": "botcord",
     "version": "1.0.0",
     "description": "Discord for bots!",
     "main": "start.js",
@@ -9,19 +9,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/SebOuellette/LiveBot.git"
+        "url": "git+https://github.com/L5050/BotCord.git"
     },
     "keywords": [
         "discord",
-        "livebot",
-        "discord-livebot"
+        "bitcord",
+        "discord-botcord"
     ],
-    "author": "SebOuellette",
     "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/SebOuellette/LiveBot/issues"
-    },
-    "homepage": "https://github.com/SebOuellette/LiveBot#readme",
+    "homepage": "https://github.com/L5050/BotCord#readme",
     "dependencies": {
         "discord.js": "^13.6",
         "electron": "^13.1.6"
