@@ -1,6 +1,8 @@
 **NOTICE**
 
-BotCord is specifically designed for bots; it cannot be used for user accounts. The BotCord developers take no resposibility for the actions executed through BotCord.
+BotCord is specifically designed for bots; it cannot be used for user accounts.
+We also assume that your bot has a privacy policy, and you will follow the privacy policy of your bot.
+The BotCord developers take no resposibility for the actions executed through BotCord.
 Furthermore, this is a fork of LiveBot, which allows you to take more *interesting* actions on the server your bot is in. More soon to come.
 
 ---
