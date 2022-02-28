@@ -1,16 +1,3 @@
-// Copyright 2017 Sebastian Ouellette
-
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-
-//     http://www.apache.org/licenses/LICENSE-2.0
-
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
 "use strict";
 
@@ -28,7 +15,7 @@ function createWindow() {
         height: 750,
         frame: false,
         backgroundColor: '#FFF',
-        webPreferences: { 
+        webPreferences: {
             nodeIntegration: true, // Use node in the render js files
             contextIsolation: false, // Makes node in the render js files work in newer electron versions
             enableRemoteModule: true // Allow the remote module to be used in the render js files
@@ -80,12 +67,12 @@ app.on('web-contents-created', (e, contents) => {
         console.log("Blocked by 'new-window'")
         newEvent.preventDefault();
     });
-      
+
     contents.on('will-navigate', newEvent => {
         console.log("Blocked by 'will-navigate'")
         newEvent.preventDefault()
     });
-      
+
     contents.setWindowOpenHandler(({ url }) => {
         setImmediate(() => {
             shell.openExternal(url);
