@@ -5,7 +5,7 @@
 
 // This is for converting the :emojis: to actual unicode emojis
 
-let shortcuts = [
+/*let shortcuts = [
     {
         face: '>:(',
         id: 'angry',
@@ -498,7 +498,7 @@ let shortcuts = [
         face: '=|',
         id: 'neutral_face',
     },
-];
+];*/
 
 const idToUni = {
     grinning: '😀',
